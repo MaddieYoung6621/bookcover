@@ -1,0 +1,315 @@
+
+@keyframes t_move {
+	0%,100% {top: 40%; left: 40%; }
+	50%		{top: 36%; left: 45%; }
+}
+
+@keyframes a_move {
+	0%,100% {top: -1%; left: 90%; }
+	50%		{top: 30%; left: 90%; }
+}
+
+@keyframes b_move {
+	0%,100% {width: 150px; height: 150; }
+	50%		{width: 50px; height: 50px; }
+}
+
+
+.box {
+	width: 500px;
+	height: 700px;
+	background-color: antiquewhite;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+
+.author {
+	margin: 0;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 50pt;
+	font-kerning: normal;
+	letter-spacing: 3px;
+	color: darkgoldenrod;
+	font-family:"ratio-modern-sc", serif;
+	position: absolute;
+	top: 18%;
+	left:50%;
+	transform: translate(-50%, -50%);
+		text-align: center;
+	letter-spacing: 8px;
+	font-kerning: normal;
+}
+
+.top {
+	width: 68%;
+	margin: 0;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 10pt;
+	font-kerning: normal;
+	letter-spacing: 3px;
+	color: blue;
+	font-family:"quasimoda", sans-serif;
+	position: absolute;
+	top: 5%;
+	left:50%;
+	transform: translate(-50%, -50%);
+		text-align: center;
+	letter-spacing: 1px;
+	font-kerning: normal;}
+
+.title {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 50pt;
+	font-kerning: normal;
+	letter-spacing: 3px;
+	color: black;
+	font-family:"quasimoda", sans-serif;
+	position: absolute;
+	top: 120%;
+	left:50%;
+	transform: translate(-50%, -50%);
+		text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.circle1 {
+	width: 150px;
+	height: 150px;
+	background:black;
+	border-radius: 100%;
+	position: absolute;
+	left: 35%;
+	top:  53%;
+	transform: translate(-50%, -50%);
+	animation: b_move infinite 5s;
+}
+
+.circle2 {
+	width: 60px;
+	height: 60px;
+	background:black;
+	border-radius: 100%;
+	position: absolute;
+	left: 57%;
+	top:  40%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+}
+
+.circle3 {
+	width: 60px;
+	height: 60px;
+	background:black;
+	border-radius: 100%;
+	position: absolute;
+	left: 90%;
+	top:  -1%;
+	transform: translate(-50%, -50%);
+	animation: a_move infinite 2s;
+
+}
+
+.rectangle1 {
+	width: 28px;
+	height: 120px;
+	background:#FFDF00;
+	position: absolute;
+	left: 20%;
+	top:  38%;
+	transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.rectangle2 {
+	width: 35px;
+	height: 175px;
+	background:#FFDF00;
+	position: absolute;
+	left: 99%;
+	top:  99%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+.rectangle3 {
+	width: 45px;
+	height: 175px;
+	background:#ff8c00;
+	position: absolute;
+	left: 65%;
+	top:  55%;
+	transform: translate(-50%, -50%)rotate(25deg);
+	z-index: 2;
+}
+
+.rectangle4 {
+	width: 45px;
+	height: 60px;
+	background:#ff8c00;
+	position: absolute;
+	left: 1%;
+	top:  1%;
+	transform: translate(-50%, -50%);
+}
+
+.rectangle5 {
+	width: 15px;
+	height: 300px;
+	background:red;
+	position: absolute;
+	left: 60%;
+	top:  45%;
+	transform: translate(-50%, -50%) rotate(-41deg);
+	z-index: 3;
+}
+
+.rectangle6 {
+	width: 30px;
+	height: 280px;
+	background:red;
+	position: absolute;
+	left: 45%;
+	top:  60%;
+	transform: translate(-50%, -50%) rotate(-75deg);
+	z-index: 0;
+}
+
+.rectangle7 {
+	width: 20px;
+	height: 50px;
+	background:blue;
+	position: absolute;
+	left: 8%;
+	top:  99%;
+	transform: translate(-50%, -50%) rotate(-25deg);
+	z-index: 0;
+}
+
+.rectangle8 {
+	width: 15px;
+	height: 50px;
+	background:blue;
+	position: absolute;
+	left: 25%;
+	top:  68%;
+	transform: translate(-50%, -50%) rotate(100deg);
+	z-index: 0;
+}
+
+.rectangle9 {
+	width: 10px;
+	height: 200px;
+	background:blue;
+	position: absolute;
+	left: 48%;
+	top:  38%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	z-index: 4;
+}
+
+.rectangle10 {
+	width: 10px;
+	height: 150px;
+	background:blue;
+	position: absolute;
+	left: 40%;
+	top:  35%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	z-index: 1;
+	position: relative;
+	animation: t_move 2s infinite;
+}
+
+.square1 {
+	width: 30px;
+	height: 30px;
+	background:black;
+	position: absolute;
+	left: 75%;
+	top:  30%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	z-index: 1;
+}
+
+.square2 {
+	width: 30px;
+	height: 30px;
+	background:red;
+	position: absolute;
+	left: 78%;
+	top:  40%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	z-index: 1;
+}
+
+
+.subtitle {
+	font-weight: 100;
+	font-style: normal;
+	font-size:18pt;
+	font-kerning: normal;
+	letter-spacing: 3px;
+	color: black;
+	font-family:"quasimoda-2", sans-serif;
+	position: absolute;
+	top: 95%;
+	left:50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	letter-spacing: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
